@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum Mode: Hashable {
+    case add, edit(Event)
+}
