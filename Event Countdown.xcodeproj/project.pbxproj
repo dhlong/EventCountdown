@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		FD9539F02B543DFB000624FB /* EventFormMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9539EF2B543DFB000624FB /* EventFormMode.swift */; };
 		FDC31C0A2B444F8800FBFEC4 /* Event_CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */; };
-		FDC31C0E2B444F8A00FBFEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */; };
-		FDC31C112B444F8A00FBFEC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */; };
 		FDC31C342B4459C100FBFEC4 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C332B4459C100FBFEC4 /* EventRow.swift */; };
 		FDC31C362B4459EF00FBFEC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C352B4459EF00FBFEC4 /* Event.swift */; };
 		FDC31C382B445D6B00FBFEC4 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C372B445D6B00FBFEC4 /* EventsView.swift */; };
@@ -38,8 +36,6 @@
 		FD9539EF2B543DFB000624FB /* EventFormMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormMode.swift; sourceTree = "<group>"; };
 		FDC31C062B444F8800FBFEC4 /* Event Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Countdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownApp.swift; sourceTree = "<group>"; };
-		FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDC31C162B444F8A00FBFEC4 /* Event CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC31C202B444F8A00FBFEC4 /* Event CountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC31C332B4459C100FBFEC4 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
@@ -96,22 +92,12 @@
 			children = (
 				FD9539EF2B543DFB000624FB /* EventFormMode.swift */,
 				FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */,
-				FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */,
-				FDC31C0F2B444F8A00FBFEC4 /* Preview Content */,
 				FDC31C332B4459C100FBFEC4 /* EventRow.swift */,
 				FDC31C352B4459EF00FBFEC4 /* Event.swift */,
 				FDC31C372B445D6B00FBFEC4 /* EventsView.swift */,
 				FDC31C3B2B44619000FBFEC4 /* EventForm.swift */,
 			);
 			path = "Event Countdown";
-			sourceTree = "<group>";
-		};
-		FDC31C0F2B444F8A00FBFEC4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +204,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC31C112B444F8A00FBFEC4 /* Preview Assets.xcassets in Resources */,
-				FDC31C0E2B444F8A00FBFEC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event Countdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,7 +422,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event Countdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
