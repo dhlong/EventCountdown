@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Mode: Hashable {
+enum EventFormMode: Hashable {
     case add, edit(Event)
 }

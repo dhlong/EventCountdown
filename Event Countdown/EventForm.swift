@@ -10,39 +10,31 @@ import SwiftUI
 
 struct EventForm: View {
 
-    @Binding var path: NavigationPath
-    @Binding var events: [Event]
-    let mode: Mode
+    private let mode: EventFormMode
+    private let onSave: (Event) -> Void
     
+    @State private var title: String
+
     @State var event: Event
     
     @State private var emptyTitle = false
-        
-    func onSave() {
-        if event.title.isEmpty {
-            emptyTitle = true
-            return
-        }
-        
-        switch(mode) {
+    
+    init(mode: EventFormMode, onSave: @escaping (Event) -> Void) {
+        self.mode = mode
+        self.onSave = onSave
+
+        switch mode {
         case .add:
-            $events.wrappedValue.append(self.event)
-        case let .edit(editedEvent):
-            if let index = $events.wrappedValue.firstIndex(of: editedEvent) {
-                $events.wrappedValue[index] = event
-            }
+            _title = .init(initialValue: "Add Event")
+            _event = .init(initialValue: Event())
+        case .edit(let editedEvent):
+            _title = .init(initialValue: "Edit \(editedEvent.title)")
+            _event = .init(initialValue: editedEvent)
         }
-        
-        path.removeLast()
     }
+
     
     var body: some View {
-        let eventTitle = switch(mode) {
-        case .add:
-            "Add Event"
-        case let .edit(editedEvent):
-            "Edit \(editedEvent.title)"
-        }
         
         NavigationView {
             Form {
@@ -53,11 +45,11 @@ struct EventForm: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarTitle(eventTitle)
+            .navigationTitle(title)
         }
         .toolbar {
             Button {
-                onSave()
+                onSave(event)
             } label: {
                 Text("Save")
             }

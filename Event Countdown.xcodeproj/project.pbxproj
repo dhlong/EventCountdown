@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD9539F02B543DFB000624FB /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9539EF2B543DFB000624FB /* Mode.swift */; };
+		FD9539F02B543DFB000624FB /* EventFormMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9539EF2B543DFB000624FB /* EventFormMode.swift */; };
 		FDC31C0A2B444F8800FBFEC4 /* Event_CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */; };
 		FDC31C0E2B444F8A00FBFEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */; };
 		FDC31C112B444F8A00FBFEC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */; };
-		FDC31C1B2B444F8A00FBFEC4 /* Event_CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C1A2B444F8A00FBFEC4 /* Event_CountdownTests.swift */; };
-		FDC31C252B444F8A00FBFEC4 /* Event_CountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C242B444F8A00FBFEC4 /* Event_CountdownUITests.swift */; };
-		FDC31C272B444F8A00FBFEC4 /* Event_CountdownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C262B444F8A00FBFEC4 /* Event_CountdownUITestsLaunchTests.swift */; };
 		FDC31C342B4459C100FBFEC4 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C332B4459C100FBFEC4 /* EventRow.swift */; };
 		FDC31C362B4459EF00FBFEC4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C352B4459EF00FBFEC4 /* Event.swift */; };
 		FDC31C382B445D6B00FBFEC4 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC31C372B445D6B00FBFEC4 /* EventsView.swift */; };
@@ -38,16 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD9539EF2B543DFB000624FB /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		FD9539EF2B543DFB000624FB /* EventFormMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormMode.swift; sourceTree = "<group>"; };
 		FDC31C062B444F8800FBFEC4 /* Event Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Event Countdown.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownApp.swift; sourceTree = "<group>"; };
 		FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDC31C162B444F8A00FBFEC4 /* Event CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC31C1A2B444F8A00FBFEC4 /* Event_CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownTests.swift; sourceTree = "<group>"; };
 		FDC31C202B444F8A00FBFEC4 /* Event CountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event CountdownUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC31C242B444F8A00FBFEC4 /* Event_CountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownUITests.swift; sourceTree = "<group>"; };
-		FDC31C262B444F8A00FBFEC4 /* Event_CountdownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_CountdownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FDC31C332B4459C100FBFEC4 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		FDC31C352B4459EF00FBFEC4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FDC31C372B445D6B00FBFEC4 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
@@ -83,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				FDC31C082B444F8800FBFEC4 /* Event Countdown */,
-				FDC31C192B444F8A00FBFEC4 /* Event CountdownTests */,
-				FDC31C232B444F8A00FBFEC4 /* Event CountdownUITests */,
 				FDC31C072B444F8800FBFEC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +94,7 @@
 		FDC31C082B444F8800FBFEC4 /* Event Countdown */ = {
 			isa = PBXGroup;
 			children = (
-				FD9539EF2B543DFB000624FB /* Mode.swift */,
+				FD9539EF2B543DFB000624FB /* EventFormMode.swift */,
 				FDC31C092B444F8800FBFEC4 /* Event_CountdownApp.swift */,
 				FDC31C0D2B444F8A00FBFEC4 /* Assets.xcassets */,
 				FDC31C0F2B444F8A00FBFEC4 /* Preview Content */,
@@ -120,23 +112,6 @@
 				FDC31C102B444F8A00FBFEC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FDC31C192B444F8A00FBFEC4 /* Event CountdownTests */ = {
-			isa = PBXGroup;
-			children = (
-				FDC31C1A2B444F8A00FBFEC4 /* Event_CountdownTests.swift */,
-			);
-			path = "Event CountdownTests";
-			sourceTree = "<group>";
-		};
-		FDC31C232B444F8A00FBFEC4 /* Event CountdownUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FDC31C242B444F8A00FBFEC4 /* Event_CountdownUITests.swift */,
-				FDC31C262B444F8A00FBFEC4 /* Event_CountdownUITestsLaunchTests.swift */,
-			);
-			path = "Event CountdownUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +246,7 @@
 			files = (
 				FDC31C362B4459EF00FBFEC4 /* Event.swift in Sources */,
 				FDC31C382B445D6B00FBFEC4 /* EventsView.swift in Sources */,
-				FD9539F02B543DFB000624FB /* Mode.swift in Sources */,
+				FD9539F02B543DFB000624FB /* EventFormMode.swift in Sources */,
 				FDC31C342B4459C100FBFEC4 /* EventRow.swift in Sources */,
 				FDC31C3C2B44619000FBFEC4 /* EventForm.swift in Sources */,
 				FDC31C0A2B444F8800FBFEC4 /* Event_CountdownApp.swift in Sources */,
@@ -282,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC31C1B2B444F8A00FBFEC4 /* Event_CountdownTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC31C252B444F8A00FBFEC4 /* Event_CountdownUITests.swift in Sources */,
-				FDC31C272B444F8A00FBFEC4 /* Event_CountdownUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

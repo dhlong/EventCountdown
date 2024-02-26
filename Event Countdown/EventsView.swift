@@ -22,7 +22,7 @@ struct EventsView: View {
         NavigationStack(path: $path) {
             List {
                 ForEach(eventList.events) { event in
-                    NavigationLink(value: Mode.edit(event)) {
+                    NavigationLink(value: EventFormMode.edit(event)) {
                         EventRow(event: event)
                     }
                 }
@@ -32,16 +32,24 @@ struct EventsView: View {
             }
             .navigationTitle("Events")
             .toolbar {
-                NavigationLink(value: Mode.add) {
-                    Image(systemName: "plus")
+                NavigationLink(value: EventFormMode.add) {
+                    Label("Add", systemImage: "plus")
                 }
             }
-            .navigationDestination(for: Mode.self) { mode in
+            .navigationDestination(for: EventFormMode.self) { mode in
                 switch(mode) {
                 case let .edit(event):
-                    EventForm(path: $path, events: $eventList.events, mode: .edit(event), event: event)
+                    EventForm(mode: .edit(event), onSave:  {editedEvent in
+                        if let index = eventList.events.firstIndex(of: event) {
+                            eventList.events[index] = editedEvent
+                        }
+                        path.removeLast()
+                    })
                 case .add:
-                    EventForm(path: $path, events: $eventList.events, mode: .add, event: Event())
+                    EventForm(mode: .add, onSave: {editedEvent in
+                        eventList.events.append(editedEvent)
+                        path.removeLast()
+                    })
                 }
 
             }
